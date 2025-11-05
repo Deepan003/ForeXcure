@@ -1,0 +1,91 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Important for padding to work with width: 100% */
+}
+
+.auth-container .button-primary {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.auth-toggle {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.auth-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.auth-message {
+  color: #006400;
+  background-color: #DFF2BF;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.auth-hardcoded {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: left;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+.auth-hardcoded p {
+  margin: 5px 0;
+}
+.auth-hardcoded code {
+  background: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,56 @@
+.doctors-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.doctor-card {
+  text-align: center;
+}
+
+.doctor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid var(--primary-color);
+}
+
+.doctor-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.doctor-specialty {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.doctor-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  min-height: 60px;
+}
+
+.doctor-org {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.doctor-card .button-primary {
+  width: 100%;
+}

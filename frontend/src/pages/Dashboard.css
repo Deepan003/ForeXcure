@@ -1,0 +1,32 @@
+.dashboard-container {
+  padding-top: 20px;
+}
+
+.dashboard-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.dashboard-patient, .dashboard-org {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-org h2, .dashboard-patient h2 {
+  margin-top: 0;
+}
+
+.org-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}

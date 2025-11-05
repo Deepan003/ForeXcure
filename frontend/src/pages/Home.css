@@ -1,0 +1,96 @@
+.home-container {
+  text-align: center;
+}
+
+.home-hero {
+  background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 180, 216, 0.7)),
+    url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home-hero-content {
+  animation: fadeIn 1s ease-in;
+}
+
+.home-hero h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.home-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* --- THIS IS THE FIX --- */
+/* We make the selector more specific to override .button-primary */
+.home-hero-content .hero-button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: var(--text-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero-content .hero-button:hover {
+  background-color: #f0f0f0;
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+/* --- END FIX --- */
+
+.home-features {
+  padding: 50px 20px;
+}
+
+.home-features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  text-align: left;
+}
+
+/* This will now show the icons you added */
+.feature-card i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  width: 50px; /* Give it a fixed width for alignment */
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+  .home-hero p {
+    font-size: 1.2rem;
+  }
+}

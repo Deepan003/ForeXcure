@@ -1,0 +1,158 @@
+/* ADD THIS AT THE TOP */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* ---------- */
+
+
+/* PASTE ALL YOUR OLD App.css STYLES BELOW */
+body {
+  /* We moved these global styles to App.css or index.css */
+  /* You can remove the body selector from here if you want */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* Remove display: flex, justify-content, align-items, height from body */
+  /* Those are now handled by the .page-container */
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* ... all your other styles from App.css ... */
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.chat-header span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+}
+
+.message-bubble {
+  padding: 12px 18px;
+  border-radius: 20px;
+  max-width: 75%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message-bubble.user {
+  background-color: #0077b6;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+.message-bubble.ai {
+  background-color: #e9ecef;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.chat-input-form {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.chat-input-form input:focus {
+  border-color: #0077b6;
+}
+
+.chat-input-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-input-form button:hover {
+  background-color: #005fa3;
+}
+
+.chat-input-form button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* AI "Typing..." Indicator */
+.typing-indicator {
+  padding: 15px 20px;
+}
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  background-color: #999;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1.4s infinite both;
+}
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
